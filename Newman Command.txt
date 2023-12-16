@@ -1,0 +1,8 @@
+newman run Booking API Collection.postman_collection.json -e Booking_env.postman_environment.json
+
+Report: 
+Install: npm install -g newman-reporter-html
+	npm install -g newman-reporter-htmlextra
+Run Command: 
+newman run “Collection Link” -e EnvironmentName.json -r cli,html
+newman run “Collection Link” -e EnvironmentName.json -r cli,htmlextra
